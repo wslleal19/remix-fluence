@@ -17,3 +17,5 @@ lerna-debug.log
 /tmp
 .netlify
 .cache
+
+app/styles/app.css

@@ -5,6 +5,9 @@ export default function Index() {
 
       <h1 className="text-5xl text-cyan-500">Welcome to Remix</h1>
 
+      <h1 className="mt-12">MT10</h1>
+
+
       <ul>
         <li>
           <a
