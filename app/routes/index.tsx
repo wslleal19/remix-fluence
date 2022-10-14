@@ -7,6 +7,7 @@ export default function Index() {
 
       <h1 className="mt-12">MT10</h1>
 
+      <div className="border-8 border-indigo-600">Bordered div</div>
 
       <ul>
         <li>
