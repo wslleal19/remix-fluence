@@ -18,4 +18,4 @@ lerna-debug.log
 .netlify
 .cache
 
-/app/tailwind.css
+# /app/tailwind.css
