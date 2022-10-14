@@ -9,6 +9,9 @@ export default function Index() {
 
       <div className="border-8 border-indigo-600">Bordered div</div>
 
+      <div className="border-4 border-red-600">Bordered div</div>
+
+
       <ul>
         <li>
           <a
