@@ -19,3 +19,4 @@ lerna-debug.log
 .cache
 
 app/styles/app.css
+./app/styles/app.css
