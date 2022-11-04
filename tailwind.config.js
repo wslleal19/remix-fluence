@@ -10,6 +10,21 @@ module.exports = {
       xl: 24,
       '2xl': 32,
     },
+    spacing: {
+      sm: '8px',
+      md: '12px',
+      lg: '16px',
+      xl: '24px',
+      vh: '8px 24px'
+    },
+    borderRadius: {
+      'none': '0',
+      'sm': '4px',
+      'md': '8px',
+      'lg': '12px',
+      'xl': '16px',
+      'full': '9999px'
+    },
     colors: {
       transparent: 'transparent',
 
@@ -17,18 +32,19 @@ module.exports = {
       white: '#FFF',
       default: '#596172',
 
-      gray: {
-        900: '#121214',
-        800: '#202024',
-        400: '#7c7c8a',
-        200: '#c4c4cc',
-        100: '#e1e1e6',
+      primary: {
+        DEFAULT: '#17BEBB',
+        600: '#108583',
       },
 
-      cyan: {
-        500: '#81d8f7',
-        300: '#9BE1FB'
+      secondary: {
+        DEFAULT: '#25272E',
+        600: '#32343d',
       },
+      tertiary: '#E9DCC4',
+
+      error: '#A71D31',
+      info: '#4969B3',
     },
     fontFamily: {
       title: ['Josefin Sans', 'sans-serif'],
