@@ -1,6 +1,8 @@
 import { Text } from "@Components/Text/Text";
 import { Title } from "@Components/Title/Title";
 import { Button } from "@Components/Button/Button";
+import { Link } from "@Components/Link/Link";
+
 
 export default function Index() {
   return (
@@ -15,9 +17,6 @@ export default function Index() {
           <Button type="button" color={'secondary'}>Entrar na minha conta</Button>
 
           <Button color={'secondary'}>Google link</Button>
-
-
-          <Button type="button" color={'default'}>Quero Participar</Button>
 
       </div>
   );

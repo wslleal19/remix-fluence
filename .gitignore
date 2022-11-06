@@ -20,6 +20,6 @@ lerna-debug.log
 /tmp
 .netlify
 .cache
-
-
+*.DS_Store
+storybook-static
 
