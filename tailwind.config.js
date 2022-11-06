@@ -30,7 +30,11 @@ module.exports = {
 
       black: '#242323',
       white: '#FFF',
-      default: '#596172',
+
+      default: {
+        DEFAULT: '#596172',
+        600: '#373b45',
+      },
 
       primary: {
         DEFAULT: '#17BEBB',
