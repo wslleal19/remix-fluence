@@ -1,13 +1,16 @@
 import { ReactNode, ComponentType, ButtonHTMLAttributes } from 'react';
+import { Link } from "@remix-run/react";
 import { clsx } from 'clsx';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode;
     className?: string;
     color?: 'primary' | 'secondary' | 'default';
+    link?: string;
+    prefetch?: 'none' | 'intent' | 'render';
 }
 
-export function Button({ children, color = 'primary', className, ...props }: ButtonProps) {
+export function Button({ children, color = 'primary', link, prefetch = 'none', className, ...props }: ButtonProps) {
     const style = clsx(
         'text-white p-vh rounded-full font-text font-semibold transition-all',
         {
@@ -18,5 +21,7 @@ export function Button({ children, color = 'primary', className, ...props }: But
         className,
     );
 
-    return <button type="button" className={style} {...props}>{children}</button>;
+    return link
+        ? <Link prefetch={prefetch} className={style} to={link}>{children}</Link>
+        : <button type="button" className={style} {...props}>{children}</button>;
 }
