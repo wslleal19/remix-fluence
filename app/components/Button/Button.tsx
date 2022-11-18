@@ -5,7 +5,7 @@ import { clsx } from 'clsx';
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode;
     className?: string;
-    color?: 'primary' | 'secondary' | 'default';
+    color?: 'primary' | 'secondary' | 'default' | 'error';
     link?: string;
     prefetch?: 'none' | 'intent' | 'render';
 }
@@ -17,6 +17,7 @@ export function Button({ children, color = 'primary', link, prefetch = 'none', c
             'bg-primary hover:bg-primary-600': color === 'primary',
             'bg-secondary hover:bg-secondary-600': color === 'secondary',
             'bg-default hover:bg-default-600': color === 'default',
+            'bg-error hover:bg-error-600': color === 'error',
         },
         className,
     );

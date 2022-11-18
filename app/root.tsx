@@ -32,7 +32,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="min-h-screen w-full overflow-x-hidden flex flex-col min-h-screen">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
