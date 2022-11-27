@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.13",
     "@netlify/functions": "^1.0.0",
     "@remix-run/netlify": "^1.7.6",
     "@remix-run/node": "^1.7.6",

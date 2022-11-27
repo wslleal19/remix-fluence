@@ -2,14 +2,19 @@ import { Text } from "@Components/Text/Text";
 import { Title } from "@Components/Title/Title";
 import { Button } from "@Components/Button/Button";
 import { Modal } from "@Components/Modal/Modal";
-
+import { Accordion } from "@Components/Accordion/Accordion";
 import {useState} from "react";
+
+const items = [
+    {title: 'Accordion 1', description: 'Accordion Lorem ipsum dolor sit amet, consectetur adipiscing'},
+    {title: 'Accordion 2', description: 'Accordion Lorem ipsum dolor sit amet, consectetur adipiscing'},
+]
 
 export default function Index() {
     let [isOpen, setIsOpen] = useState(false);
 
    return (
-      <div>
+      <div className={"p-4"}>
           <Title>
               Título da página
           </Title>
@@ -37,6 +42,11 @@ export default function Index() {
                      </>
                  }
              />
+
+          <br/>
+
+          <div className={'mt-4'}></div>
+          <Accordion items={items} />
       </div>
   );
 }

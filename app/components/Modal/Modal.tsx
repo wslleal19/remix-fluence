@@ -1,5 +1,5 @@
+import { Fragment, ReactNode} from 'react';
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, ReactNode, useState} from 'react';
 import { Title } from "@Components/Title/Title";
 
 export interface ModalProps {

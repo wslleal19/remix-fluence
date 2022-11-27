@@ -19,6 +19,7 @@ module.exports = {
       default: {
         DEFAULT: '#596172',
         600: '#373b45',
+        200: '#a5aab5'
       },
 
       primary: {
@@ -57,6 +58,7 @@ module.exports = {
         'md': '8px',
         'lg': '12px',
         'xl': '16px',
+        '2xl': '20px',
         'full': '9999px'
       },
       /*
