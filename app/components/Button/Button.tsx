@@ -12,7 +12,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function Button({ children, color = 'primary', link, prefetch = 'none', className, ...props }: ButtonProps) {
     const style = clsx(
-        'text-white p-vh  rounded-md font-text font-semibold transition-all',
+        'text-white p-vh rounded-xl font-text font-semibold transition-all',
         {
             'bg-primary hover:bg-primary-600': color === 'primary',
             'bg-secondary hover:bg-secondary-600': color === 'secondary',

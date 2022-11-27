@@ -22,7 +22,7 @@ export function Accordion({ items }: AccordionProps) {
             <Disclosure>
                 {({ open }) => (
                     <>
-                        <Disclosure.Button className="bg-default w-full rounded-md p-md my-sm flex">
+                        <Disclosure.Button className="bg-default w-full rounded-xl p-sm my-sm flex">
                             <Text tag={'span'} className={'text-white font-bold ml-2'}>{item.title}</Text>
                             <ChevronRightIcon className={clsx(open ? 'rotate-90 transform' : '', 'h-7 w-7 ml-auto text-white') } />
                         </Disclosure.Button>
@@ -49,7 +49,7 @@ export function Accordion({ items }: AccordionProps) {
     }
 
     return (
-        <div className="w-full max-w-md rounded-md bg-secondary p-sm">
+        <div className="w-full max-w-md rounded-xl bg-secondary p-2">
             { renderItems() }
         </div>
     )

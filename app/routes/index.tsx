@@ -3,6 +3,7 @@ import { Title } from "@Components/Title/Title";
 import { Button } from "@Components/Button/Button";
 import { Modal } from "@Components/Modal/Modal";
 import { Accordion } from "@Components/Accordion/Accordion";
+import { TextField } from "@Components/TextField/TextField";
 import {useState} from "react";
 
 const items = [
@@ -47,6 +48,12 @@ export default function Index() {
 
           <div className={'mt-4'}></div>
           <Accordion items={items} />
+
+          <br/>
+
+          <TextField outline placeholder={"Informe o usuário"} label={'Nome de usuário'} />
+<br/>
+          <TextField placeholder={"Informe sua senha"} label={'Senha'} />
       </div>
   );
 }
