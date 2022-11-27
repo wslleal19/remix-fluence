@@ -10,12 +10,12 @@ export interface ItemsProps {
     description: string | ReactNode;
 }
 
-export interface TextProps {
+export interface AccordionProps {
     items?: Array<ItemsProps>;
     className?: string;
 }
 
-export function Accordion({ items }: TextProps) {
+export function Accordion({ items }: AccordionProps) {
 
     const renderItems = () => {
         return items?.map((item) =>
